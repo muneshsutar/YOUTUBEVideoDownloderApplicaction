@@ -47,6 +47,15 @@
 
         </RelativeLayout>
     </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:id="@+id/serch"
+        android:layout_margin="15dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
 
 
     <EditText
@@ -70,6 +79,71 @@
         android:textSize="14sp">
 
     </EditText>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonbg"
+            android:text="Find"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginTop="10dp"
+            android:id="@+id/findvideoBtn">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/viewvideo"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="20dp"
+        android:layout_below="@id/serch"
+
+        android:orientation="vertical">
+
+        <VideoView
+            android:id="@+id/particularreels"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp">
+
+
+
+        </VideoView>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/buttonbg"
+            android:text="Download"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+
+
+            >
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+    </LinearLayout>
+
+
+    <WebView
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/viewvideo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </WebView>
+
+
 
 
 
