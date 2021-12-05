@@ -135,6 +135,7 @@
 
 
     <WebView
+        android:id="@+id/WebView"
         android:padding="10dp"
         android:layout_margin="10dp"
         android:layout_below="@+id/viewvideo"
